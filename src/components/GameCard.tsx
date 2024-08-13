@@ -9,7 +9,7 @@ interface Props {
   game: Game;
 }
 
-const GameCards = ({ game }: Props) => {
+const GameCard = ({ game }: Props) => {
   return (
     <Card w="300px" borderRadius={10} overflow={"hidden"}>
       <Image src={getCroppedImageUrl(game.background_image)} />
@@ -26,4 +26,4 @@ const GameCards = ({ game }: Props) => {
   );
 };
 
-export default GameCards;
+export default GameCard;
