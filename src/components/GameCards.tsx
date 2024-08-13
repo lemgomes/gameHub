@@ -10,9 +10,8 @@ interface Props {
 }
 
 const GameCards = ({ game }: Props) => {
-  console.log("xpto" + getCroppedImageUrl(game.background_image));
   return (
-    <Card borderRadius={10} overflow={"hidden"}>
+    <Card w="300px" borderRadius={10} overflow={"hidden"}>
       <Image src={getCroppedImageUrl(game.background_image)} />
       <CardBody>
         <Heading fontSize={"2xl"}>{game.name}</Heading>
